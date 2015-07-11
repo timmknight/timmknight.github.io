@@ -33,7 +33,7 @@ theme:
 
   # Scripts
   google_analytics: "UA-63850501-1"
-  disqus_shortname: "tknightuk"
+  # disqus_shortname: tknightuk
   katex: true # Enable if using math markup
 
   # Localization strings
