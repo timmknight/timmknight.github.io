@@ -5,7 +5,7 @@
   width: 100%;
   background-color:$header-desc-background-color;
   background-size: cover;
-  font-size: 1.2em;
+  font-size: 2.5em;
   text-align: center;
   color: $header-desc-text-color;
 }
@@ -29,6 +29,7 @@
     margin-top: 1em;
   }
 }
+
 // Pagination
 .pagination .button {
   margin: 0 1.5em;

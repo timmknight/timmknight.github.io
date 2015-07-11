@@ -5,45 +5,38 @@ url: "http://example.com" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
 theme:
   # Meta
-  title: Type Theme
+  title: Tim Knight
   avatar: avatar.png
   gravatar: # Email MD5 hash
-  description: "A website with blog posts and pages" # used by search engines
+  description: "A blog about Ruby, Ruby on Rails, JavaScript and my journey learning web development." # used by search engines
 
   # Header and footer text
-  header_text: >
-     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-     <p>Remove all header text in <code>_config.yml</code> to disable this feature.</p>
-  header_text_feature_image:
   footer_text: >
-   Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
-
   # Icons
   rss: false
-  email_address: # Full email address, e.g. "sam@example.com"
+  email_address: hey@timmilesknight.com
   behance:
   bitbucket:
   dribbble:
   facebook:
   flickr:
-  github: "rohanchandra/type-theme"
+  github: "timmknight"
   google_plus:
   instagram:
-  linkedin:  # Full URL
+  linkedin:  http://www.linkedin.com/profile/view?id=346711298
   pinterest:
   reddit:
   soundcloud:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: "twitter"
+  twitter: "timmilesknight"
   wordpress:
   youtube:
 
   # Scripts
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  google_analytics: "UA-63850501-1"
+  disqus_shortname: tknightuk
   katex: true # Enable if using math markup
 
   # Localization strings
@@ -56,7 +49,7 @@ theme:
 
   # Colours, typography and padding
   # Open the "_sass > base" folder, and open "_variables.scss"
-  google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
+  google_fonts: "Lato:400,400italic"
   
   # Post navigation
   post_navigation: false
