@@ -1,10 +1,9 @@
 ---
-layout: page
 title: About
-permalink: /about/
+permalink: about/
+profile: true
 ---
 
-I'm a developer who is passionate about learning new things. I decided to make this blog to share the things I learn
-in the hope that others can learn from me.
+This is a static page. It could be an 'about page' if you'd like.
 
-When I'm not developing I enjoy scuba diving, skiing, brazilian jiu jitsu, surfing, cooking and films.
+{% include footer.html %}

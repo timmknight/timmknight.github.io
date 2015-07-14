@@ -1,41 +1,51 @@
 ---
 layout: default
+disqus: true
+archive: true
 ---
-<article {% if page.feature-img %}class="feature-image"{% endif %}>
-  <header style="background-image: url('{{ site.baseurl }}/{{ page.feature-img }}')">
-    <h1 class="title">{{ page.title }}</h1>
-    <p class="meta">
-    {{ page.date | date: "%B %-d, %Y" }}
-    {% if page.author %} - {{ page.author }}{% endif %}
-    </p>
-  </header>
-  <section class="post-content">{{ content }}</section>
-</article>
 
-<!-- Post navigation -->
-{% if site.theme.post_navigation %}
-<div id="post-nav">
-    {% if page.previous.url %}
-    <a id="prev-post" href="{{ site.baseurl }}{{ page.previous.url }}">
-      <span class="page-title">{{ page.previous.title }}</span>
-      <span class="nav-label">
-        <i class="fa fa-chevron-left"></i> {{ site.theme.str_prev }}
-      </span>
+<article class="post">
+    <header>
+        <h1>{{ page.title }}</h1>
+        <h2 class="headline">{{ page.date | date:"%B %-d, %Y" }}</h2>
+    </header>
+    <section id="post-body">
+        {{content}}
+    </section>
+</article>
+<footer id="post-meta" class="clearfix">
+    <a href="http://twitter.com/{{ site.authorTwitter }}">
+        <img class="avatar" src="/assets/images/avatar.png">
+        <div>
+            <span class="dark">{{ site.author }}</span>
+            <span>{{ site.description }}</span>
+        </div>
     </a>
-    {% endif %}
-    {% if page.next.url %}
-    <a id="next-post" href="{{ site.baseurl }}{{ page.next.url }}">
-       <span class="page-title">{{ page.next.title }}</span>
-       <span class="nav-label">
-        {{ site.theme.str_next }} <i class="fa fa-chevron-right"></i>
-       </span>
-     </a>
-    {% endif %}
-</div>
+
+    <section id="sharing">
+        {% include share.html %}
+    </section>
+</footer>
+
+<!-- Disqus comments -->
+{% if page.disqus %}
+    <div class="archive readmore">
+        <h3>Comments</h3>
+        {% include disqus.html %}
+    </div>
 {% endif %}
 
-<!-- Disqus -->
-<div class="comments">
-  {% include disqus.html %}
-</div>
+<!-- Archive post list -->
+{% if page.archive %}
+    <ul id="post-list" class="archive readmore">
+        <h3>Read more</h3>
+        {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url }}">{{ post.title }}<aside class="dates">{{ post.date | date:"%b %d" }}</aside></a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+
 

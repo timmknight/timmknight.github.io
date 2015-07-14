@@ -1,6 +1,7 @@
 ---
-layout: post
-title: Multiples of 3 and 5
+title:  "Multiples of 3 & 5"
+date:   2015-07-11 19:18:00
+description: Project Euler problem 1
 ---
 
 In this series of posts I'm going to work through some of the challenges on <a href="http://projecteuler.net" target="_blank">Project Euler</a> in Ruby and JavaScript. Project Euler is a great resource for those who are learning to code or for those looking to tune up their skills.
@@ -23,7 +24,7 @@ The first challenge is the <a href="http://projecteuler.net/problem=1" target="_
 The problem is very similar to the classic <a href="http://c2.com/cgi/wiki?FizzBuzzTest" target="_blank">FizzBuzz</a> problem that seems to be a really popular interview question.
 
 Ruby
-{% highlight rb %}
+{% highlight ruby %}
 count = 0 
 
 (1...1000).each do |i|
@@ -38,11 +39,11 @@ count = 0
 end
 
 puts count
-# 233168
+#=> 233168
 {% endhighlight %}
 
 JavaScript
-{% highlight js %}
+{% highlight javascript %}
 var count = 0 
 
 for (var i = 0; i < 1000; i++) {
@@ -58,7 +59,7 @@ for (var i = 0; i < 1000; i++) {
 };
 
 console.log(count);
-// 233168
+//=> 233168
 {% endhighlight %}
 
 As you can see the way I solved the problem is the same in both languages.
