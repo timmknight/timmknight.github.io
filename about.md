@@ -4,6 +4,6 @@ permalink: about/
 profile: true
 ---
 
-This is a static page. It could be an 'about page' if you'd like.
+I'm passionate about web development and want to share it with the world. If you'd like to get in touch you can email me @ hey@timmilesknight.com.
 
 {% include footer.html %}
