@@ -77,7 +77,6 @@ h2 {
 
 .profile #header {
 	border-bottom: 1px solid #eee;
-	margin-bottom: 40px;
 	padding-bottom: 40px;
 	text-align: center;
 	position: relative;
@@ -139,7 +138,7 @@ nav.main-nav a.cta {
 }
 
 #wrapper {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 60px 40px 100px 40px;
 }
@@ -371,7 +370,7 @@ img {
 Post List
 =========================================== */
 #post-list,#archive-list {
-	margin-top: 100px;
+	margin-top: 20px;
 }
 
 #post-list li,#archive-list li {
@@ -622,6 +621,10 @@ h2.month {
   margin-left: 2px;
 }
 
+.imagecenter {
+	display: block;
+	margin: auto;
+}
 /* Media Queries */
 @media screen and (max-width: 540px) {
 	#wrapper { padding:20px 20px 20px 20px;}
