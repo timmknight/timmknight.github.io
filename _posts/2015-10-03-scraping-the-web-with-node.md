@@ -18,7 +18,7 @@ So my package.json looks like this:
     "main": "scraper.js"
 }
 {% endhighlight %}
-Feel free to change the name of the porject and the file name. There are lots of optional fields you can put
+Feel free to change the name of the project and the file name. There are lots of optional fields you can put
 in here such as your version and author but I'm going to stick to the basics.
 
 With our package.json sorted lets go into scraper.js. The first thing we need to do in this file 
