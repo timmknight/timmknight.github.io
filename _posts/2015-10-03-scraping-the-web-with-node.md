@@ -1,5 +1,5 @@
 ---
-title:  "Scraping the web with Node.js."
+title:  "Scraping the web with Node.js"
 date:   2015-10-03 19:18:00
 description: A web scraper that gets the price of an amazon product and send me an sms if it changes.
 ---
