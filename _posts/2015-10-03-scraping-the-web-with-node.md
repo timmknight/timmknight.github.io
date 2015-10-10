@@ -1,7 +1,7 @@
 ---
 title:  "Scraping the web with Node.js"
 date:   2015-10-03 19:18:00
-description: A web scraper that gets the price of an amazon product and send me an sms if it changes.
+description: A web scraper that gets the price of an amazon product and send me an sms if it changes
 ---
 Scraping the web with node is really straight forward. I'm going to show you 
 how to build a cool node app that will check the price of a book on 
