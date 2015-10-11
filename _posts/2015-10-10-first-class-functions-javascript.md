@@ -64,7 +64,7 @@ So again we see that functions are object that have properties. One of those pro
 
 Or as Nicholas Zakas put it in his fantastic book: 
 
-> <a href="http://www.amazon.co.uk/gp/product/1118026691?tag=timmknightgit-21">"This doesn't throw an error because the function declaration is read first before the code begins to exectue."</a>
+> <a href="http://www.amazon.com/gp/product/1118026691/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1118026691&linkCode=as2&tag=blog0a05a-20&linkId=6KJBKAOWF36GTSIU">"This doesn't throw an error because the function declaration is read first before the code begins to exectue."</a>
 {% highlight javascript %}
 hello();
 
