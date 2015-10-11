@@ -137,6 +137,11 @@ nav.main-nav a.cta {
 	margin-left: 12px;
 }
 
+ a.cta {
+	background: #5badf0;
+	color: #fff;
+	margin-left: 12px;
+}
 #wrapper {
   max-width: 800px;
   margin: 0 auto;
@@ -624,6 +629,20 @@ h2.month {
 	display: block;
 	margin: auto;
 }
+
+#mcont {
+	height: 22px;
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+}
+
+#mailchimp{
+	padding: 8px 12px;
+	border-radius: 3px;
+	margin: 15px 0;
+}
+
 /* Media Queries */
 @media screen and (max-width: 540px) {
 	#wrapper { padding:20px 20px 20px 20px;}
