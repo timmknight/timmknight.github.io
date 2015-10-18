@@ -84,10 +84,6 @@ h2 {
 
 .profile #avatar {
 	display: inline-block;
-	width: 80px;
-	height: 80px;
-	border-radius: 50%;
-	margin-bottom: 20px;
 }
 
 .profile h1 {
@@ -124,24 +120,37 @@ nav.main-nav a {
 	top: 8px;
 	right: 6px;
 	padding: 8px 12px;
-	color: #5badf0;
+	color: #4A9DF9;
 	font-size: 13px;
 	/*font-weight: bold;*/
 	line-height: 1.35;
 	border-radius: 3px;
-
 }
+
+nav.main-nav a:hover {
+	color: #0769D6;
+}
+
 nav.main-nav a.cta {
-	background: #5badf0;
+	background: #4A9DF9;
 	color: #fff;
 	margin-left: 12px;
 }
 
- a.cta {
-	background: #5badf0;
+nav.main-nav a.cta:hover{
+	background: #0769D6;
+}
+
+a.cta {
+	background: #4A9DF9;
 	color: #fff;
 	margin-left: 12px;
 }
+
+a.cta:hover {
+	background: #0769D6;
+}
+
 #wrapper {
   max-width: 800px;
   margin: 0 auto;
@@ -156,9 +165,6 @@ nav.main-nav a.cta {
 
 .home #avatar {
 	float: right;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
 }
 
 /* Typography */
@@ -169,12 +175,14 @@ a,
 #post-list li:hover .dates,
 #title:hover {
 	text-decoration: none;
-	color: #5badf0;
-	color: #5694f1;
+	color: #0769D6;
+	color: #0769D6;
 }
 
 p a { color: #5694f1; }
-
+p a:hover {
+	color: #0769D6;
+}
 /*Transitions*/
 a,
 #post-nav a,
@@ -420,7 +428,7 @@ Post List
 }
 
 #archive-link:hover {
-	background: #5694f1;
+	background: #0769D6;
 	color: #fff;
 	box-shadow: 0 0 0 1px #5694f1;
 }
@@ -577,7 +585,7 @@ h2.month {
 }
 
 #archive-list li a:hover,#archive-list li:hover .dates {
-	color: #5694f1;
+	color: #0769D6;
 }
 
 #post-meta img.avatar {
