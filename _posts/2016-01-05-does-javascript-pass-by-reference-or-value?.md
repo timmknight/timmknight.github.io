@@ -1,7 +1,7 @@
 ---
 title:  "Does JavaScript pass by value or reference?"
 date:   2016-01-05 19:18:00
-description: Really understand modules in Node.js by writing your own and looking deeper into how require and module.exports work
+description: Understand exactly how JavaScript passes variables
 ---
 
 The super quick answer to this question is that primitive types such as strings, numbers and boolean are passed by value but objects and arrays are passed by reference.
