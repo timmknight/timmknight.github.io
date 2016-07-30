@@ -702,7 +702,7 @@ h2.month {
 	.post h1 { font-size:24px; }
 	.post h2 { font-size:20px; }
 	#post-list h2 { font-size: 15px; }
-	#post-list a { 	font-size: 17px; }
+	#post-list a { 	font-size: 14px !important; width: 81px; }
 	.contact { font-size: 15px;	}
 	nav.main-nav a { font-size: 12px; }
 	#post-nav { font-size:14px; }
