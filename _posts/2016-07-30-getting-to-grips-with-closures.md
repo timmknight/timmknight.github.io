@@ -8,7 +8,7 @@ disqus: true
 Closures are often used in JavaScript but something that beginners often struggle with. It's fair to say that there are some more experienced developers who don't really understand how closures work but often implement them. If you truly understand something you should be able to explain it to someone else, do you think you understand Closures enough to teach someone else? If not after this article certainly will.
 
 The excellent Mozilla development documentation describes Closures as
-><a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" target="_blank">Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers' the environment in which it was created.</a>
+> <a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" target="_blank">Closures are functions that refer to independent (free) variables. In other words, the function defined in the closure 'remembers' the environment in which it was created.</a>
 
 This is decent summary, just so long as you already understand how Closures work.
 

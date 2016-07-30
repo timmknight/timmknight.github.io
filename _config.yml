@@ -4,7 +4,8 @@ meta_description: "A blog about Front-End development & UX."
 
 contactPage: true
 
-highlighter: rouge
+markdown: kramdown
+highlighter: pygments
 
 paginate: 8
 baseurl: /
