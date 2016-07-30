@@ -2,10 +2,11 @@
 title:  "What is the NaN type in JavaScript"
 date:   2016-01-17 19:18:00
 description: Understand exactly what NaN is and how to check for it
+disqus: true
 ---
 
 Unsurprisingly NaN stands for not a number, so I'm sure you can guess what it is supposed  to represent. There are however, a few
-oddities when it comes to NaN so it's not as simple as it seems at first glance. Time to head into the JavaScript console and 
+oddities when it comes to NaN so it's not as simple as it seems at first glance. Time to head into the JavaScript console and
 check NaN out in a bit more detail.
 
 {% highlight javascript %}
@@ -13,7 +14,7 @@ NaN
 => NaN
 {% endhighlight %}
 
-So NaN itself will return the property of NaN, which is what you would expect. What would you expect the typeof(NaN) to be? 
+So NaN itself will return the property of NaN, which is what you would expect. What would you expect the typeof(NaN) to be?
 
 {% highlight javascript %}
 typeof(NaN)
@@ -27,7 +28,7 @@ Remember how I said NaN isn't as simple as it seems? The type of NaN is actually
 => NaN
 {% endhighlight %}
 
-So you can see here that if we try to perform a mathematical operation on a string such as "hello" the result will be NaN because the string cannot be implicitly coerced to a number. Implicit conversion is when the JavaScript engine attempts to convert things to the correct type. If you had the string "1" and attempted to perform a mathematical operation on it the JavaScript engine will try and convert that string into a number. 
+So you can see here that if we try to perform a mathematical operation on a string such as "hello" the result will be NaN because the string cannot be implicitly coerced to a number. Implicit conversion is when the JavaScript engine attempts to convert things to the correct type. If you had the string "1" and attempted to perform a mathematical operation on it the JavaScript engine will try and convert that string into a number.
 
 {% highlight javascript %}
 "1"/10
@@ -91,7 +92,7 @@ Number("hello")
 => NaN
 {% endhighlight %}
 
-So when we call isNaN("hello") what is actually happening is 
+So when we call isNaN("hello") what is actually happening is
 {% highlight javascript %}
 isNaN(Number("hello"))
 => true
@@ -115,7 +116,7 @@ var notANumber = NaN
 
 notANumber !== notANumber
 => true
-{% endhighlight %} 
+{% endhighlight %}
 
 Here we are checking that the variable notANumber does not equal itself, so as NaN == NaN returns false we can check that NaN !== NaN and the return value will be true, it's not a number.
 
@@ -124,7 +125,7 @@ var aNumber = 999
 
 aNumber !== aNumber
 => false
-{% endhighlight %} 
+{% endhighlight %}
 
 aNumber is a number so asking if it does not equal itself will return false.
 
@@ -133,7 +134,7 @@ var aString = "Hello World"
 
 aString !== aString
 => false
-{% endhighlight %} 
+{% endhighlight %}
 
 
 {% highlight javascript %}
@@ -141,7 +142,7 @@ var aCoercedNumber = "111"
 
 aCoercedNumber !== aCoercedNumber
 => false
-{% endhighlight %} 
+{% endhighlight %}
 
 So anything that compares against itself using the !== operator will return false expect NaN which will return true.
 {% highlight javascript %}
@@ -149,6 +150,6 @@ var notANumber = NaN
 
 notANumber !== notANumber
 => true
-{% endhighlight %} 
+{% endhighlight %}
 
 So because of the quirk that NaN does not equal NaN we can determine if something is NaN using !==, as unless it is NaN it will return false.

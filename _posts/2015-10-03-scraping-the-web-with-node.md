@@ -2,10 +2,11 @@
 title:  "Scraping the web with Node.js"
 date:   2015-10-03 19:18:00
 description: A web scraper that gets the price of an amazon product and send me an sms if it changes
+disqus: true
 ---
 Scraping the web with node is really straight forward. I'm going to show you
 how to build a cool node app that will check the price of a book on
-<a class='external' target="_blank" href="http://www.amazon.co.uk/dp/1118531647/?tag=timmknightgit-21">Amazon</a> 
+<a class='external' target="_blank" href="http://www.amazon.co.uk/dp/1118531647/?tag=timmknightgit-21">Amazon</a>
 and send you a text message if it changes.
 
 To start off we need to create two files: scraper.js and package.json.
@@ -30,9 +31,9 @@ var fs = require('fs'),
 {% endhighlight %}
 
 So for the app we are using FileSystem, Request and Cheerio. There is one more to come but
-we will get to that later. <a class='external' target="_blank" href="https://nodejs.org/api/fs.html">FileSystem</a> 
+we will get to that later. <a class='external' target="_blank" href="https://nodejs.org/api/fs.html">FileSystem</a>
  allows you to easily deal with files in node. <a class='external' target="_blank"  href="https://github.com/request/request">Request</a> makes it simple to make http calls and
- <a class='external' target="_blank" href="https://github.com/Cheeriojs/Cheerio">Cheerio</a> allows you to use 
+ <a class='external' target="_blank" href="https://github.com/Cheeriojs/Cheerio">Cheerio</a> allows you to use
  jQuery on the server side. Now we need to install these and add them to our package.json:
 
 {% highlight console %}

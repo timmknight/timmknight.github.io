@@ -2,6 +2,7 @@
 title:  "First-Class Functions and Function Expressions in JavaScript"
 date:   2015-10-10 19:18:00
 description: Looking at first-class functions and function expressions in JavaScript to get a deeper understanding
+disqus: true
 ---
 
 In JavaScript functions are first-class. This mean that with functions you can do everything you can do with other types such as assigning them to variables.

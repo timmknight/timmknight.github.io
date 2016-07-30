@@ -2,11 +2,12 @@
 title:  "HTTP server with Node.JS and Express"
 date:   2015-10-01 19:18:00
 description: Building a HTTP server with Node.JS and Express
+disqus: true
 ---
 
-<a class='external' href="https://nodejs.org" target="_blank">Node.js</a> is a great open-source runtime environment for developing server-side web applications in JavaScript. Node is great, it's the 'in' thing at the moment and is being used by a lot of companies. <a class='external' href="http://venturebeat.com/2012/01/24/why-walmart-is-using-node-js/">Walmart, </a><a class='external' href="https://www.paypal-engineering.com/2013/11/22/node-js-at-paypal/" target="_blank">Paypal, </a><a class='external' href="https://azure.microsoft.com/en-us/develop/nodejs/" target="_blank">Microsoft, </a><a class='external' href="http://venturebeat.com/2011/08/16/linkedin-node/" target="_blank">LinkedIn, </a><a class='external' href="http://venturebeat.com/2012/01/24/node-at-google-mozilla-yahoo/" target="_blank">Google, Mozilla & Yahoo</a> have all found cases to use it. 
+<a class='external' href="https://nodejs.org" target="_blank">Node.js</a> is a great open-source runtime environment for developing server-side web applications in JavaScript. Node is great, it's the 'in' thing at the moment and is being used by a lot of companies. <a class='external' href="http://venturebeat.com/2012/01/24/why-walmart-is-using-node-js/">Walmart, </a><a class='external' href="https://www.paypal-engineering.com/2013/11/22/node-js-at-paypal/" target="_blank">Paypal, </a><a class='external' href="https://azure.microsoft.com/en-us/develop/nodejs/" target="_blank">Microsoft, </a><a class='external' href="http://venturebeat.com/2011/08/16/linkedin-node/" target="_blank">LinkedIn, </a><a class='external' href="http://venturebeat.com/2012/01/24/node-at-google-mozilla-yahoo/" target="_blank">Google, Mozilla & Yahoo</a> have all found cases to use it.
 
-There are a lot of use cases for Node.js but it shouldn't be used for every task you think of. It's not something you'd want to use for CPU-Intensive operations as this will annul most of it's advantages and there are far better alternatives. You should always pick the best tool for the job rather than a new cool tool or the tool you're best as using. The use cases where Node has really become one go tos is for building fast, scalable network applicaitons. Looking at the <a class='external' href="https://blog.risingstack.com/what-is-nodejs-used-for-the-2015-nodejs-overview-report/" target="_blank">RisingStack's blog</a> overview of Node.js in 2015 you can see that it's being used a lot for creating REST APIs, real-time services, microservices and tooling. 
+There are a lot of use cases for Node.js but it shouldn't be used for every task you think of. It's not something you'd want to use for CPU-Intensive operations as this will annul most of it's advantages and there are far better alternatives. You should always pick the best tool for the job rather than a new cool tool or the tool you're best as using. The use cases where Node has really become one go tos is for building fast, scalable network applicaitons. Looking at the <a class='external' href="https://blog.risingstack.com/what-is-nodejs-used-for-the-2015-nodejs-overview-report/" target="_blank">RisingStack's blog</a> overview of Node.js in 2015 you can see that it's being used a lot for creating REST APIs, real-time services, microservices and tooling.
 
 Node is an asynchronous, event-drive framework that has been built upon Chrome's JavaScript engine. Under the hood it's a lot of C/C++ but this isn't something we need to focus on. Node is single-threaded and uses a concurrency model based on an event loop. It is non-blocking, so you don't have to wait for a task to be completed before starting a new one, but instead it registers a callback and lets the program continue. This means it can handle concurrent operations without multiple threads of execution, so it can scale pretty well.
 
@@ -68,7 +69,7 @@ In your terminal navigate to the directory you created the files in and type in
 {% endhighlight %}
 
 
-Now you can navigate to <a class='external' href="http://localhost:2000" target="_blank">localhost:2000</a> and see the server in action! Now that was nice and easy, but it gets even easier with the popular minimalist framework express. 
+Now you can navigate to <a class='external' href="http://localhost:2000" target="_blank">localhost:2000</a> and see the server in action! Now that was nice and easy, but it gets even easier with the popular minimalist framework express.
 
 To install express simply
 {% highlight console %}

@@ -2,10 +2,11 @@
 title:  "Writing your first module in Node.js"
 date:   2015-10-11 19:18:00
 description: Really understand modules in Node.js by writing your own and looking deeper into how require and module.exports work
+disqus: true
 ---
 
-Modules are new to JavaScript and are now apart of the <a class='external' href="http://www.ecma-international.org/ecma-262/6.0/">ECMAScript 2015 (ES6) standard.</a> Modules are used a lot in Node 
-so it's really important that you understand how they work. A module is simply a reusable block of code whose existance does not accidentally impact upon other code. This basically means that you can have two modules which both use the same variables and they won't clash. JavaScript uses <a class='external' href="http://www.commonjs.org/">CommonJS</a> modules which are just an agreed upon standard for how code modules should be structured. 
+Modules are new to JavaScript and are now apart of the <a class='external' href="http://www.ecma-international.org/ecma-262/6.0/">ECMAScript 2015 (ES6) standard.</a> Modules are used a lot in Node
+so it's really important that you understand how they work. A module is simply a reusable block of code whose existance does not accidentally impact upon other code. This basically means that you can have two modules which both use the same variables and they won't clash. JavaScript uses <a class='external' href="http://www.commonjs.org/">CommonJS</a> modules which are just an agreed upon standard for how code modules should be structured.
 
 Lets start by writing our own very simple module so we can get an overview of how they work and are used. You need two files for this so go ahead and navigate to the directory you want to use for this tutorial and create the two files.
 
