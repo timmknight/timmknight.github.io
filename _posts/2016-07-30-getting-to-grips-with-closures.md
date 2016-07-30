@@ -2,6 +2,7 @@
 title:  "Getting to grips with Closures"
 date:   2016-07-30 19:18:00
 description: JavaScript Closures are on of the most misunderstood and difficult concepts for beginners, so lets change that.
+disqus: true
 ---
 
 Closures are often used in JavaScript but something that beginners often struggle with. It's fair to say that there are some more experienced developers who don't really understand how closures work but often implement them. If you truly understand something you should be able to explain it to someone else, do you think you understand Closures enough to teach someone else? If not after this article certainly will.

@@ -4,7 +4,6 @@ meta_description: "A blog about Front-End development & UX."
 
 contactPage: true
 
-markdown: redcarpet
 highlighter: rouge
 
 paginate: 8
