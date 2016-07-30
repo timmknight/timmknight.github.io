@@ -19,7 +19,7 @@ function passByValue(myValue){
 }
 passByValue(myValue);
 console.log(myValue);
-=> 1 
+=> 1
 {% endhighlight %}
 
 Here we create a variable called myValue and set it to 1. We then create the passByValue function which takes the myValue function and set it to equal 2. Finally we call the passByValue function passing it myValue and log the value of myValue to the console. The variable myValue is still one because primitives are passed by value. You're essentially creating a copy of myValue which is passed to the function. So anything that is done to myValue within the function will not change the myValue that is outside the function because of it's scope and the fact its passed by value.  
@@ -27,7 +27,7 @@ Here we create a variable called myValue and set it to 1. We then create the pas
 <h3>Pass by reference</h3>
 
 
-Objects unlike primitive types are passed by reference. This means that a variable points to a reference of that object rather than a copy of that object. So if you were to change the value of that objects property this changes that object wherever it's referenced. Lets take a look at another example. 
+Objects unlike primitive types are passed by reference. This means that a variable points to a reference of that object rather than a copy of that object. So if you were to change the value of that objects property this changes that object wherever it's referenced. Lets take a look at another example.
 
 {% highlight javascript %}
 var myObject = {};
@@ -39,9 +39,9 @@ console.log(myObject);
 => Object {num: 2}
 {% endhighlight %}
 
-Here we have an empty object with the really original name myObject. The passByReference function takes a parameter in this case the myObject and sets the property num to equal 2. The passByReference function is then called and the myObject is printed to the console. 
+Here we have an empty object with the really original name myObject. The passByReference function takes a parameter in this case the myObject and sets the property num to equal 2. The passByReference function is then called and the myObject is printed to the console.
 
-We can see that myObject.num is 2. This is because myObject is passed to the function by reference rather than value. It's essentially telling the JavaScript engine where to find myObject in memory rather than copying it. It's pointing to the myObject obejct not a copy of it. 
+We can see that myObject.num is 2. This is because myObject is passed to the function by reference rather than value. It's essentially telling the JavaScript engine where to find myObject in memory rather than copying it. It's pointing to the myObject obejct not a copy of it.
 
 There is one final thing to look at with passing by reference so lets look at another example.
 
@@ -57,4 +57,4 @@ console.log(myObject);
 
 Here inside the function we are trying to change what myObject points to. In JavaScript when we pass by reference we can't then change what the myObject variable points to we can only alter the properties of the original object.
 
-To sum up: primitives are passed by value. Objects and arrays (non-primitives) are passed by reference. 
+To sum up: primitives are passed by value. Objects and arrays (non-primitives) are passed by reference.

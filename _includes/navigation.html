@@ -1,11 +1,11 @@
 <nav class="main-nav">
     {% if page.url != "/index.html" %}
-        <a href='{{ site.baseurl }}{{ page.about }}'> <span class="arrow">←</span> Home </a>
+        <a href='{{ site.baseurl }}{{ page.contact }}'> <span class="arrow">←</span> Home </a>
     {% endif %}
 
-    {% if page.url != "/about/" %}
-        {% if site.aboutPage %}
-            <a href='{{ site.baseurl }}about'>About </a>
+    {% if page.url != "/contact/" %}
+        {% if site.contactPage %}
+            <a href='{{ site.baseurl }}contact'>Contact </a>
         {% endif %}
     {% endif %}
     <a class="cta" target="_blank" href="http://eepurl.com/bCbrPH">Subscribe</a>
