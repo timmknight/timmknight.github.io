@@ -4,8 +4,8 @@ date:   2015-10-11 19:18:00
 description: Really understand modules in Node.js by writing your own and looking deeper into how require and module.exports work
 ---
 
-Modules are new to JavaScript and are now apart of the <a href="http://www.ecma-international.org/ecma-262/6.0/">ECMAScript 2015 (ES6) standard.</a> Modules are used a lot in Node 
-so it's really important that you understand how they work. A module is simply a reusable block of code whose existance does not accidentally impact upon other code. This basically means that you can have two modules which both use the same variables and they won't clash. JavaScript uses <a href="http://www.commonjs.org/">CommonJS</a> modules which are just an agreed upon standard for how code modules should be structured. 
+Modules are new to JavaScript and are now apart of the <a class='external' href="http://www.ecma-international.org/ecma-262/6.0/">ECMAScript 2015 (ES6) standard.</a> Modules are used a lot in Node 
+so it's really important that you understand how they work. A module is simply a reusable block of code whose existance does not accidentally impact upon other code. This basically means that you can have two modules which both use the same variables and they won't clash. JavaScript uses <a class='external' href="http://www.commonjs.org/">CommonJS</a> modules which are just an agreed upon standard for how code modules should be structured. 
 
 Lets start by writing our own very simple module so we can get an overview of how they work and are used. You need two files for this so go ahead and navigate to the directory you want to use for this tutorial and create the two files.
 
@@ -29,7 +29,7 @@ Require is a core node function that takes a string which represent the location
 hello();
 {% endhighlight %}
 
-Go ahead and run this using 
+Go ahead and run this using
 
 {% highlight console %}
 $ node app.js
@@ -52,7 +52,7 @@ Now in our hello.js lets export the module using module.exports.
 module.exports = hello;
 {% endhighlight %}
 
-So now if we run app.js we will see 'hello' is logged to the console. What's happening here? Well the module.exports = hello; line will return the result of the hello function. So wherever we require this file and invoke the function we will see 'hello' being logged to the console. Require is just a function that you pass a path too, when you set it to a variable it means you can call the function in that file, remember that functions are first-class in JavaScript so we can pass functions as variables. 
+So now if we run app.js we will see 'hello' is logged to the console. What's happening here? Well the module.exports = hello; line will return the result of the hello function. So wherever we require this file and invoke the function we will see 'hello' being logged to the console. Require is just a function that you pass a path too, when you set it to a variable it means you can call the function in that file, remember that functions are first-class in JavaScript so we can pass functions as variables.
 
 What do we do then if we want to have our own hello function in app.js? Well lets start off by writing that function.
 {% highlight javascript %}
@@ -87,7 +87,7 @@ hello
 So all you have to do to make a files function available to another file is module.export that function and require it in another file. But what is really going on in Node when we do this?
 
 
-We are about to go deep into Node here so hold on tight and keep yours arms in the vehicle at all times! Lets step through the program with a debugger. I'm using <a href="https://code.visualstudio.com/">Visual Studio Code</a>, it's free and runs on both Windows & Mac.
+We are about to go deep into Node here so hold on tight and keep yours arms in the vehicle at all times! Lets step through the program with a debugger. I'm using <a class='external' href="https://code.visualstudio.com/">Visual Studio Code</a>, it's free and runs on both Windows & Mac.
 
 <img class="imagecenter" src="/assets/images/debug1.png" alt="">
 
@@ -97,7 +97,7 @@ You can see here that when the require is called we have lots of variables that 
 
 <img class="imagecenter" src="/assets/images/debug2.png" alt="">
 
-When we step inside the require function we head into the Node core, into a file called <a href="https://github.com/nodejs/node/blob/master/lib/module.js">module.js.</a> You can see here that require is just a function that takes a path as the argument. This require function just returns what comes back from the real require function. This is exactly how we use require in our app.js.
+When we step inside the require function we head into the Node core, into a file called <a class='external' href="https://github.com/nodejs/node/blob/master/lib/module.js">module.js.</a> You can see here that require is just a function that takes a path as the argument. This require function just returns what comes back from the real require function. This is exactly how we use require in our app.js.
 
 <img class="imagecenter" src="/assets/images/debug3.png" alt="">
 
@@ -121,7 +121,7 @@ You can see here that the object that represents my hello module is being create
 <img class="imagecenter" src="/assets/images/debug3.2.png" style="height:126px width:274px" alt="">
 
 
- Now we have this module object we can see that it has the exports object which is an empty object. So when you use module.exports, you are really asking the module object to give you its exports property. This is the same way you access a functions name using the .name that we saw in my <a href="http://timmknight.github.io/2015/first-class-functions-javascript/">article about first-class functions.</a>
+ Now we have this module object we can see that it has the exports object which is an empty object. So when you use module.exports, you are really asking the module object to give you its exports property. This is the same way you access a functions name using the .name that we saw in my <a class='external' href="http://timmknight.github.io/2015/first-class-functions-javascript/">article about first-class functions.</a>
 
 Going further on we are actually going to try and load that file. In our case hello.js. Remember that the filename variable was set eariler.
 
@@ -131,7 +131,7 @@ With our file loaded lets move on a bit more.
 
 <img class="imagecenter" src="/assets/images/debug5.png" alt="">
 
-This is an interesting part. When we require a file we don't actually have to put '.js' at the end of because Node will assume you are requiring a JavaScript file. So we could just 
+This is an interesting part. When we require a file we don't actually have to put '.js' at the end of because Node will assume you are requiring a JavaScript file. So we could just
 
 {% highlight javascript %}
 var hi = require('./hello');
@@ -140,7 +140,7 @@ var hi = require('./hello');
 and Node will assume we mean hello.js. This does mean however that if we want a non-js file we will have to add .json etc. You can start to see that what is going on in Node isn't all magic.
 
 
-Now we get to the point where we are going to compile our code through <a href="https://code.google.com/p/v8/">Google's V8 engine.</a> We can see that compile takes in a content variable which you can see contains our code.
+Now we get to the point where we are going to compile our code through <a class='external' href="https://code.google.com/p/v8/">Google's V8 engine.</a> We can see that compile takes in a content variable which you can see contains our code.
 
 <img class="imagecenter" src="/assets/images/debugcompile.png" alt="">
 
@@ -190,7 +190,7 @@ hello
 {% endhighlight %}
 
 
-Take a deep breath as we have done a lot here. Essentially what happens is Node changes what module.exports returns! All require does is give you back whatever you change module.exports to. See it really isn't that difficult! 
+Take a deep breath as we have done a lot here. Essentially what happens is Node changes what module.exports returns! All require does is give you back whatever you change module.exports to. See it really isn't that difficult!
 
 - You pass a path to the require function
 

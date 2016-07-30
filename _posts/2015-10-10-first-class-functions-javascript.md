@@ -9,9 +9,9 @@ In JavaScript functions are first-class. This mean that with functions you can d
 
 
 Wikipeida on first-class functions:
-> <a href="https://en.wikipedia.org/wiki/First-class_function">In computer science, a programming language is said to support first-class functions (or function literal) if it treats functions as first-class objects. Specifically, this means that the language supports constructing new functions during the execution of a program, storing them in data structures, passing them as arguments to other functions, and returning them as the values of other functions.</a>
+> <a class='external' href="https://en.wikipedia.org/wiki/First-class_function">In computer science, a programming language is said to support first-class functions (or function literal) if it treats functions as first-class objects. Specifically, this means that the language supports constructing new functions during the execution of a program, storing them in data structures, passing them as arguments to other functions, and returning them as the values of other functions.</a>
 
-In JavaScript functions are objects. So when you 
+In JavaScript functions are objects. So when you
 create a function you are actually creating an object. This object will have certain properties one of which will be the function. Lets take a look at this.
 
 Lets first make a simple function statement. You've all seen function statements, it's one of the first things you will learn in JavaScript. Functions Statements don't result in a value until they are exectued. Function statements are also known as function declarations so if you see this don't get confused.
@@ -37,9 +37,9 @@ If you run this in a browser you will see the function itself being returned. No
 console.log(hello.name);
 => hello
 {% endhighlight %}
-function.name is a now part of the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name">ECMAScript 2015 (ES6) standard.</a> But it has been around in a JavaScript a while. This name value is always equivalent to the identifier that follows the function keyword.
+function.name is a now part of the <a class='external' href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/name">ECMAScript 2015 (ES6) standard.</a> But it has been around in a JavaScript a while. This name value is always equivalent to the identifier that follows the function keyword.
 
-Lets add another property 
+Lets add another property
 {% highlight javascript %}
 hello.language = 'English';
 console.log(hello.language);
@@ -60,11 +60,11 @@ What you will now see in the console is the object itself
 
 
 
-So again we see that functions are object that have properties. One of those properties being the function itself which you can invoke. This is very powerful because it means functions are first-class and we can do lots of cool things with them. Lets take a look at some of the ways functions are used in JavaScript. You've already seen function statements, these are pulled into memory when it's execution context is created. This means that they can be called before they're created. This is known as hoisting or more techinally function declaration hoisting. 
+So again we see that functions are object that have properties. One of those properties being the function itself which you can invoke. This is very powerful because it means functions are first-class and we can do lots of cool things with them. Lets take a look at some of the ways functions are used in JavaScript. You've already seen function statements, these are pulled into memory when it's execution context is created. This means that they can be called before they're created. This is known as hoisting or more techinally function declaration hoisting.
 
-Or as Nicholas Zakas put it in his fantastic book: 
+Or as Nicholas Zakas put it in his fantastic book:
 
-> <a href="http://www.amazon.com/gp/product/1118026691/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1118026691&linkCode=as2&tag=blog0a05a-20&linkId=6KJBKAOWF36GTSIU">"This doesn't throw an error because the function declaration is read first before the code begins to exectue."</a>
+> <a class='external' href="http://www.amazon.com/gp/product/1118026691/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1118026691&linkCode=as2&tag=blog0a05a-20&linkId=6KJBKAOWF36GTSIU">"This doesn't throw an error because the function declaration is read first before the code begins to exectue."</a>
 {% highlight javascript %}
 hello();
 
@@ -88,10 +88,10 @@ var logNum = function(){
 	console.log(1);
 }
 logNum();
-=> 1 
+=> 1
 {% endhighlight %}
 
-Here a function is created and assigned to the variable logNum. Remeber that functions can do anything other types in JavaScript can do. Now this function is considered an anonymous function because it has no name. So if you were to 
+Here a function is created and assigned to the variable logNum. Remeber that functions can do anything other types in JavaScript can do. Now this function is considered an anonymous function because it has no name. So if you were to
 
 {% highlight javascript %}
 console.log(logNum.name);
@@ -106,7 +106,7 @@ var logNum = function(){
 }
 {% endhighlight %}
 
-This will cause an error 
+This will cause an error
 
 {% highlight console %}
 TypeError: logNum is not a function
@@ -136,7 +136,7 @@ Functions are first-class in JavaScript!
 
 So lets summarise first-class functions:
 
-Just like other variables in JavaScript functions 
+Just like other variables in JavaScript functions
 
 - are an instance of the Object type
 

@@ -1,5 +1,5 @@
 name: Tim Knight
-description: I'm a Front-End Developer, I started this blog to share my passion for development and UX.
+description: I'm a Front-End Developer, I started this blog to share my passion for JavaScript and UX.
 meta_description: "A blog about Front-End development & UX."
 
 contactPage: true
@@ -7,7 +7,7 @@ contactPage: true
 markdown: redcarpet
 highlighter: pygments
 
-paginate: 20
+paginate: 8
 baseurl: /
 domain_name: 'http://timmknight.github.io'
 google_analytics: 'UA-63850501-1'

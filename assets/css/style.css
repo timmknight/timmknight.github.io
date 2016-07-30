@@ -69,9 +69,14 @@ h2 {
 	font: italic 19px/1.3em Georgia,serif;
 	color: #bbb;
 }
-h1, h2, #post-list h2, #post-list a {
+h1, h2, #post-list h2, #post-list a, .contact {
 	-webkit-transition: all 1.3s; /* Safari */
 	transition: all 1.3s;
+}
+
+.main-nav a, #post-nav {
+ -webkit-transition: font-size 1.3s !important; /* Safari */
+ transition: font-size 1.3s !important;
 }
 .profile #wrapper {
 	padding: 40px 20px 20px 20px;
@@ -128,7 +133,7 @@ nav.main-nav a {
 }
 
 nav.main-nav a:hover {
-	color: #0769D6;
+	color: #427fed;
 }
 
 nav.main-nav a.cta, #mcont a.cta {
@@ -171,8 +176,8 @@ a,
 #post-list li:hover .dates,
 #title:hover {
 	text-decoration: none;
-	color: #0769D6;
-	color: #0769D6;
+	color: #427fed;
+	color: #427fed;
 }
 
 p a { color: #427fed; }
@@ -444,7 +449,7 @@ Post List
 }
 
 #archive-link:hover {
-	background: #0769D6;
+	background: #427fed;
 	color: #fff;
 	box-shadow: 0 0 0 1px #5694f1;
 }
@@ -531,7 +536,7 @@ Post List
 #post-nav {
 	text-align:center;
 	padding-top:20px;
-	font-size:13px;
+	font-size:16px;
 	font-weight:500;
 	margin-top: 40px;
 }
@@ -543,6 +548,7 @@ Post List
 	-o-transition: all 0.1s linear;
 	transition: all 0.1s linear;
 	position: relative;
+	font-weight: bold;
 }
 
 #post-nav span.prev {
@@ -558,7 +564,7 @@ Post List
 	padding: 1px;
 }
 
-#post-nav span.prev:hover .arrow {
+/*#post-nav span.prev:hover .arrow {
 	left: -4px;
 }
 
@@ -572,7 +578,7 @@ Post List
 
 #post-nav span.next:hover {
 	right: -3px;
-}
+}*/
 
 /* Archive */
 h1.archive {
@@ -607,7 +613,7 @@ h2.month {
 }
 
 #archive-list li a:hover,#archive-list li:hover .dates {
-	color: #0769D6;
+	color: #427fed;
 }
 
 #post-meta img.avatar {
@@ -672,6 +678,10 @@ h2.month {
 	margin: 15px 0;
 }
 
+.external:visited {
+	color: #3021e2;
+}
+
 /* Media Queries */
 @media screen and (max-width: 540px) {
 	#wrapper { padding:20px 20px 20px 20px;}
@@ -693,4 +703,7 @@ h2.month {
 	.post h2 { font-size:20px; }
 	#post-list h2 { font-size: 15px; }
 	#post-list a { 	font-size: 17px; }
+	.contact { font-size: 15px;	}
+	nav.main-nav a { font-size: 12px; }
+	#post-nav { font-size:14px; }
 }
