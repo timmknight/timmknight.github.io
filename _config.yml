@@ -1,8 +1,8 @@
 name: Tim Knight
-description: Blogging about development
-meta_description: "A blog about learning web development."
+description: I'm a Front-End Developer, I started this blog to share my passion for development and UX.
+meta_description: "A blog about Front-End development & UX."
 
-aboutPage: true
+contactPage: true
 
 markdown: redcarpet
 highlighter: pygments

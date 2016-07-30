@@ -51,7 +51,7 @@ margin-bottom: 20px;
 html, body { height: 100%; }
 
 body {
-	font:16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font:16px/1 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #666;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
@@ -62,23 +62,24 @@ h1 {
 	letter-spacing: -1px;
 	color: #222;
 	font-weight: bold;
+
 }
 
 h2 {
 	font: italic 19px/1.3em Georgia,serif;
 	color: #bbb;
 }
-
+h1, h2, #post-list h2, #post-list a {
+	-webkit-transition: all 1.3s; /* Safari */
+	transition: all 1.3s;
+}
 .profile #wrapper {
-	padding: 100px 40px 0px;
+	padding: 40px 20px 20px 20px;
 	max-width: 600px;
 	margin: 0 auto;
 }
 
 .profile #header {
-	border-bottom: 1px solid #eee;
-	padding-bottom: 40px;
-	text-align: center;
 	position: relative;
 }
 
@@ -90,30 +91,29 @@ h2 {
 .profile h1 {
 	font-weight: 400;
 	letter-spacing: 0px;
-	font-size: 20px;
+	font-size: 40px;
 	color: #222;
+	padding-bottom: 10px;
+	border-bottom: 3px solid black;
+	text-transform: uppercase;
 }
 
 .profile h2 {
 	font-size: 20px;
 	  font-weight: 300;
-	  color: #aaa;
+	  color: #777;
 	  margin-top: 10px;
-	  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	  font-style: normal;
 
 }
 
 nav.main-nav {
 	padding: 20px 20px 0;
-
-	/*max-width: 600px;*/
-	/*width:100%;*/
 	background: #fff;
 	background: rgba(255,255,255,.90);
 	margin: 0 auto;
 	text-align: right;
-	/*position: fixed;*/
 	z-index: 100;
 }
 
@@ -121,47 +121,42 @@ nav.main-nav a {
 	top: 8px;
 	right: 6px;
 	padding: 8px 12px;
-	color: #4A9DF9;
-	font-size: 13px;
-	/*font-weight: bold;*/
+	color: #427fed;
+	font-size: 15px;
+	font-weight: bold;
 	line-height: 1.35;
-	border-radius: 3px;
 }
 
 nav.main-nav a:hover {
 	color: #0769D6;
 }
 
-nav.main-nav a.cta {
-	background: #4A9DF9;
-	color: #fff;
+nav.main-nav a.cta, #mcont a.cta {
+	background: #FFF;
+	color: #427fed;
+	border: 2px solid #427fed;
+	font-weight: bold;
 	margin-left: 12px;
 }
 
-nav.main-nav a.cta:hover{
-	background: #0769D6;
+nav.main-nav a.cta:hover,  #mcont a.cta:hover{
+	background: #427fed;
+	color: #FFF;
 }
 
-a.cta {
-	background: #4A9DF9;
-	color: #fff;
-	margin-left: 12px;
-}
-
-a.cta:hover {
-	background: #0769D6;
+.contact {
+	line-height: initial;
 }
 
 #wrapper {
   max-width: 800px;
   margin: 0 auto;
-  padding: 60px 40px 100px 40px;
+  padding: 20px;
 }
 
 #wrapper.home {
 	max-width: 600px;
 	margin: 0 auto;
-	padding: 0px 40px 20px 40px;
 }
 
 .home #avatar {
@@ -180,9 +175,9 @@ a,
 	color: #0769D6;
 }
 
-p a { color: #5694f1; }
+p a { color: #427fed; }
 p a:hover {
-	color: #0769D6;
+	color: #2166e2;
 }
 /*Transitions*/
 a,
@@ -199,7 +194,7 @@ ul 	{ margin:0; padding:0; }
 li	{ list-style-type:circle; list-style-position:inside; }
 
 /* Line Height */
-#post-body, p { line-height:1.7; }
+#post-body, p { line-height:1.5; }
 
 b, strong { font-weight: 500;
   color: #1E2025; }
@@ -217,7 +212,7 @@ em, i { font-style: italic; }
 .description {
 	float: right;
 	font: italic 14px/1.4em Georgia,serif;
-	color: #aaa;
+	color: #777;
 }
 
 
@@ -242,19 +237,19 @@ em, i { font-style: italic; }
 .post h1 {
 	margin-bottom:2 0px;
 	color: #222;
-	font: 300 32px/1.4em "Helvetica Neue", Helvetica,Arial,sans-serif;
+	font: 300 32px/1.4em Lato, "Helvetica Neue", Helvetica,Arial,sans-serif;
 }
 
 .post h2 {
 	margin-bottom: 40px;
-	  font: 300 24px/1.5 "Helvetica Neue",Helvetica,Arial,sans-serif;
+	  font: 300 24px/1.5 Lato, "Helvetica Neue",Helvetica,Arial,sans-serif;
 	  color: #111;
 }
 
 
 .post h2.headline {
 	/*font: italic 22px/1.3em Georgia,serif;*/
-	font: normal 13px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font: normal 13px/1.5em Lato, "Helvetica Neue",Helvetica,Arial,sans-serif;
 	margin: -5px 0 40px 0;
 	color: #b2b9be;
 	  font-size: 13px;
@@ -265,10 +260,12 @@ em, i { font-style: italic; }
 }
 
 #post-list h2 {
-	font: normal 17px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
-	color: #aaa;
-	max-width: 400px;
-	margin-top: 2px;
+	font: normal 17px/1.5em Lato, "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin-top: 12px;
+}
+
+#post-list li, #post-list h2  {
+	color: #777;
 }
 
 h3, h4, h5 { color:#333; }
@@ -396,34 +393,52 @@ Post List
 
 #post-list li+li {
 	padding-top: 20px;
-	border-top: 1px solid #eee;
 }
 
 #post-list a {
 	color: #333;
 	display: block;
-	font: bold 19px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: bold 19px/1.7 Lato, "Helvetica Neue",helvetica,Arial,sans-serif;
 }
 
-#post-list .dates {
-	float: right;
-	position: relative;
-	top: 1px;
-	font: 300 17px/1.8 "Helvetica Neue",helvetica,Arial,sans-serif;
-	color: #bbb;
+#post-list p {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#post-list .date {
+	font: 300 13px/1.8 Lato, "Helvetica Neue",helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+	font: bold;
+	margin-bottom: 20px;
 }
 
 #post-list-footer {
-	/*border-top: 1px solid #eee;*/
 	margin-top: 20px;
-	padding-top: 100px;
+	padding-top: 50px;
 }
+
+.post-read-more {
+	border: 2px solid #427fed;
+	width: 85px;
+  padding: 5px;
+	color: #427fed !important;
+	margin-top: 20px;
+	font-size: 15px !important;
+}
+
+.post-read-more:hover {
+	border: 2px solid #427fed;
+	color: white !important;
+	background: #427fed;
+}
+
 
 #archive-link {
 	display: inline-block;
 	font-size: 13px;
 	font-weight: bold;
-	border-radius: 4px;
+	border-radius: 0px;
 	padding: 3px 10px 6px;
 	box-shadow: 0 0 0 1px hsla(207,83%,80%,1);
 }
@@ -440,16 +455,26 @@ Post List
 	font-size: 17px;
 }
 
+.archive.readmore li{
+	border-bottom: 1px solid #eee;
+	padding: 20px 0 !important;
+	margin-bottom: 0px !important;
+}
+
+.archive.readmore li:last-child{
+	border-bottom: 1px solid transparent;
+}
+
+.archive.readmore li a aside.dates {
+	float: right;
+}
+
 #footer {
-	/*box-shadow: inset 0 1px 0 #eee;*/
 	padding: 40px 0 0 0;
-	margin-top: 100px;
 }
 
 /* Post Page */
-#header {
-	border-bottom: 1px solid #eee;
-}
+
 
 .post {
 	margin: 80px 0 0 0;
@@ -459,17 +484,15 @@ Post List
 	font-size: 13px;
 	font-weight: bold;
 	line-height: 1.4;
-	border-top: 1px solid #eee;
 	padding-top: 40px;
 	margin-bottom: 40px;
 	padding-bottom: 40px;
-	margin-top: 40px;
+	margin-top: 20px;
 	color:#444;
-	border-bottom: 1px solid #eee;
 }
 
 #post-meta div span {
-	color: #aaa;
+	color: #777;
 	font-weight: 500;
 	display: block;
 }
@@ -480,7 +503,7 @@ Post List
 }
 
 #post-meta div {
-	margin: 0 25px 0 0;
+	margin: 0 25px 10px 0;
 	float: left;
 }
 
@@ -506,7 +529,6 @@ Post List
 
 /* Post Navigation */
 #post-nav {
-	border-top:1px solid #eee;
 	text-align:center;
 	padding-top:20px;
 	font-size:13px;
@@ -559,12 +581,11 @@ h1.archive {
 
 h2.month {
 	width: 100%;
-	font: bold 13px/1 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: bold 13px/1 Lato, "Helvetica Neue",helvetica,Arial,sans-serif;
 	text-transform: uppercase;
 	margin-top: 40px;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
-	border-bottom: 1px solid #eee;
 }
 
 #archive-list li:last-child {
@@ -573,7 +594,7 @@ h2.month {
 
 #archive-list a {
 	display: block;
-	font: bold 17px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: bold 17px/1.7 Lato, "Helvetica Neue",helvetica,Arial,sans-serif;
 	color: #333;
 }
 
@@ -581,7 +602,7 @@ h2.month {
 	float: right;
 	position: relative;
 	top: 1px;
-	font: 300 17px/1.7 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: 300 17px/1.7 Lato, "Helvetica Neue",helvetica,Arial,sans-serif;
 	color: #bbb;
 }
 
@@ -601,21 +622,22 @@ h2.month {
 
 #post-list.archive.readmore h3{
 
-	  font: 400 20px "Helvetica Neue", Helvetica,Arial,sans-serif;
-	  margin-bottom: 30px;
+	  font: 400 20px Lato, "Helvetica Neue", Helvetica,Arial,sans-serif;
+	  margin-bottom: 20px;
 }
 
 #post-list.archive.readmore a{
-	font: 400 16px/1.6 "Helvetica Neue",helvetica,Arial,sans-serif;
-	color: #5694f1;
+	font: 400 16px/1.6 Lato, "Helvetica Neue",helvetica,Arial,sans-serif;
+	color: black;
 }
 
 #post-list.archive.readmore a:hover{
 	opacity: 0.8;
+	color: #427fed;
 }
 
 #post-list.archive.readmore .dates{
-	font: 300 16px/1.6 "Helvetica Neue",helvetica,Arial,sans-serif;
+	font: 300 16px/1.6 Lato, "Helvetica Neue",helvetica,Arial,sans-serif;
 }
 #sharing a.facebook {
   background: #4361b3;
@@ -630,7 +652,6 @@ h2.month {
   font-weight: bold;
   color: #fff;
   padding: 6px 10px;
-  border-radius: 4px;
   margin-left: 2px;
 }
 
@@ -643,32 +664,33 @@ h2.month {
 	height: 22px;
 	width: 100%;
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 60px;
 }
 
 #mailchimp{
 	padding: 8px 12px;
-	border-radius: 3px;
 	margin: 15px 0;
 }
 
 /* Media Queries */
 @media screen and (max-width: 540px) {
 	#wrapper { padding:20px 20px 20px 20px;}
-	#header { margin-bottom: 60px; border-bottom: 1px solid #eee; }
 	.post { margin: 40px 0; }
 	#footer { margin-top: 60px; }
 
 	#post-list, #archive-list { margin-top: 0; }
-	#post-meta { margin-top: 60px; }
+	#post-meta { margin-top: 20px; }
 
 	#title { font-size: 17px; }
 	#post-list .dates { display: none; }
 
 	#post-list-footer { margin-top: 20px; padding-top: 40px; }
 
-	h1 { font-size: 26px; }
+	#header h1 { font-size: 26px; }
+	#header h2 { font-size: 17px;}
 	.post h2.headline { font-size: 13px; }
 	.post h1 { font-size:24px; }
 	.post h2 { font-size:20px; }
+	#post-list h2 { font-size: 15px; }
+	#post-list a { 	font-size: 17px; }
 }
