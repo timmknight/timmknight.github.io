@@ -1,1 +1,1 @@
-My blog, built in Jekyll using the Kactus theme, about development.
+My blog, built in Jekyll about development.
