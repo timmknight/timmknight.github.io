@@ -425,11 +425,12 @@ Post List
 
 .post-read-more {
 	border: 2px solid #427fed;
-	width: 85px;
+	width: 90px;
   padding: 5px;
 	color: #427fed !important;
 	margin-top: 20px;
 	font-size: 15px !important;
+	text-align: center;
 }
 
 .post-read-more:hover {
@@ -702,7 +703,8 @@ h2.month {
 	.post h1 { font-size:24px; }
 	.post h2 { font-size:20px; }
 	#post-list h2 { font-size: 15px; }
-	#post-list a { 	font-size: 14px !important; width: 81px; }
+	#post-list a { 	font-size: 14px !important; }
+	.post-read-more { width: 90px; text-align: center; }
 	.contact { font-size: 15px;	}
 	nav.main-nav a { font-size: 12px; }
 	#post-nav { font-size:14px; }
