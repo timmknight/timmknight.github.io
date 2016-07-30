@@ -75,8 +75,8 @@ h1, h2, #post-list h2, #post-list a, .contact {
 }
 
 .main-nav a, #post-nav {
- -webkit-transition: font-size 1.3s !important; /* Safari */
- transition: font-size 1.3s !important;
+ -webkit-transition: font-size 1.3s, background 0.15s, color 0.15s !important; /* Safari */
+ transition: font-size 1.3s, background 0.15s, color 0.15s !important;
 }
 .profile #wrapper {
 	padding: 40px 20px 20px 20px;
